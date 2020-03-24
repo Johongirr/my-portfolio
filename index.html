@@ -8,22 +8,23 @@
 </head>
 <body>
       <!-- hamburger menu-->
-      <div class="hamburger_container">
+       
         <div class="hamburger-menu">
             <div class="hamburger-menu__line"></div>
             <div class="hamburger-menu__line"></div>
             <div class="hamburger-menu__line"></div>
         </div> 
-      </div>
+      
     
     <!-- header -->
     <header id="header-nav" class="container">
         <!-- main navigation -->
         <nav class="nav"> 
-            <ul class="nav__list">
-                <a href="#" class="nav__logo">
-                    Johon 
-                </a>
+            <a href="#" class="nav__logo">
+                Johon 
+            </a>
+            <ul class="nav__list" id="list">
+               
                 
                 <li>
                     <a href="#about" class="nav__list-link">
@@ -56,7 +57,8 @@
                 View Projects
             </a>
         </header>
-        <!-- section about -->
+         <!-- about -->
+         <!-- section about -->
         <section id="about">
             <h2 class="about__title--bg">
                 About Me 
@@ -71,8 +73,9 @@
                             About Me
                         </h3>
                         <p class="about__description-paragraph-grey">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque laboriosam quas mollitia, architecto, consequatur temporibus facere obcaecati harum tempore reiciendis corporis maiores. Enim perspiciatis placeat molestiae, soluta fugiat cumque autem?
-
+                          Hi, my name is Johon. I'm a self-taught front-end developer. I started learning programm as to thrive in this field, you have 
+                          to learn constantly and be a problem solver both of which are the things I love that's why I chose to be a programmer.
+                          Currently, I'm looking for a job in this field, so if you wanna hire me <a href="#contact">contact me</a> 
                         </p>
                     </div>
                 </section>
@@ -80,22 +83,25 @@
                     <h2 class="about__skills-title--bg">
                         Skills
                     </h2>
-                    <div class="about__skills-container">
-                        <div>
-                           <h3>Technologies</h3>
-                          <img src="https://image.flaticon.com/icons/png/512/1216/1216733.png" alt="html5 logo">
-                          <img src="https://coryrylan.com/assets/images/posts/types/css.svg" alt="css3 logo">
-                          <img src="https://achievement-images.teamtreehouse.com/badges_css_modularsass_stage02.png" alt="block element modifier icon">
-                          <img src="https://image.flaticon.com/icons/svg/80/80932.svg" alt="image that convey responsive design">
-                        </div>
-                        <div>
-                            <h3>Dev Tools</h3>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/1200px-Google_Chrome_icon_%28September_2014%29.svg.png" alt="chrome logo">
-                            <img src="https://gitforwindows.org/img/git_logo.png" alt="git logo">
-                            <img src="https://pbs.twimg.com/profile_images/1157035760085684224/iuxTnT5g_400x400.jpg" alt="github logo">
-                            <img src="https://www.redhat.com/cms/managed-files/styles/xlarge/s3/tux-327x360.png?itok=puszajU_" alt="linux logo">
-                        </div>
-                        </div>
+                    <h3>
+                        programming languages & tools
+                    </h3>
+                    <span>
+                        <i class="fab fa-bootstrap fa-4x"></i>
+                    </span>
+                    <span>
+                        <i class="fab fa-html5 fa-4x"></i>
+                    </span>
+                    <span>
+                        <i class="fab fa-css3 fa-4x"></i>
+                    </span>
+                    <span>
+                        <i class="fab fa-npm fa-4x"></i>
+                    </span>
+                    <span>
+                        <i class="fab fa-js-square fa-4x"></i>
+                    </span>
+                         
                 </section>
             </div>
         </section>
@@ -109,10 +115,10 @@
                     <a href="#" class="projects_pic projects_pic--1"></a>
                     <div class="projects_link">
                          
-                            <a href="https://github.com/Johongirr/NYT-website-copy">Github</a>
+                            <a href="https://github.com/Johongirr/consulting-design-copy/">Github</a>
                          
                         
-                            <a href="https://johongirr.github.io/NYT-website-copy/">Watch live</a>
+                            <a href="https://johongirr.github.io/consulting-design-copy/">Watch live</a>
                         
                     </div>
                 </article>
@@ -131,63 +137,50 @@
                     <a href="#" class="projects_pic projects_pic--3"></a>
                     <div class="projects_link">
                         
-                            <a href="https://github.com/Johongirr/NYT-website-copy">Github</a>
+                            <a href="https://github.com/Johongirr/mint-signup-page">Github</a>
                        
                          
-                            <a href="https://johongirr.github.io/NYT-website-copy/">Watch live</a>
+                            <a href="https://johongirr.github.io/mint-signup-page/">Watch live</a>
+                        
+                    </div>
+                </article>
+                <article>
+                    <a href="#" class="projects_pic projects_pic--4"></a>
+                    <div class="projects_link">
+                        
+                            <a href="https://github.com/Johongirr/apple-clone">Github</a>
+                       
+                         
+                            <a href="https://johongirr.github.io/apple-clone/">Watch live</a>
                         
                     </div>
                 </article>
             </section>
         </section>
         <!-- contact -->
-        <section id="contact">
-            <h2 class="contact__title">
-                Contact me 
-            </h2>
-            <div>
-                <form id="contact__form">
-                    <div class="input-group">
-                        <label for="name">NAME</label>
-                        <input type="text" placeholder="Name" id="name" class="user-text" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="email">EMAIL</label>
-                        <input type="email" placeholder="Email" id="email" class="user-text" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="subject">SUBJECT</label>
-                        <input type="text" placeholder="Subject" id="subject" class="user-text" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="message">MESSAGE</label>
-                        <textarea class="contact__form-textarea"  name="message" id="message" required></textarea>
-                    </div>
-                    <button class="contact__form-btn btn">
-                        Send
-                    </button>
-                </form>
-            </div>
-        </section>
+         <section id="contact">
+             <h2 class="contact__title">
+                 Contact Me
+             </h2>
+             <p class="contact__paragraph">
+                 Hi, I'm based on Warsaw, Poland and if you wanna hire me please contact me at the email </i><strong>johongir_rahimov@bk.ru</strong>
+                 or make a call on <strong>+48 514 581 371</strong>
+             </p>
+         </section>
     </main>
     <!-- footer -->
     <footer id="footer">
         <div class="container">
             <div class="footer__container">
-                <div class="footer__contact">
-                    <p>PHONE: +48 514 581 371</p>
-                    <p>EMAIL: johongir_rahimov@bk.ru</p>
-                </div>
+                
                 <ul class="footer__icons">
-                    <a href="#">
+                    <a href="https://github.com/Johongirr" title="github" target="_blank">
                         <i class="fab fa-github fa-2x"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.codewars.com/users/Johongirmdmdmd?refreshed=true" title="codewars" target="_blank">
                         <i class="fas fa-code fa-2x"></i>
                     </a>
-                    <a href="#">
-                        <i class="fab fa-linkedin-in fa-2x"></i>
-                    </a>
+                   
                 </ul>
             </div>
             <p class="footer__copyright">
@@ -197,25 +190,24 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
     <script>
-        console.log('Ht')
+        
         const menu = document.querySelector('.nav__list')
-        const menuBtn = document.querySelector('.hamburger_container')
+        const menuBtn = document.querySelector('.hamburger-menu')
         let isShown = false;
-console.log(menuBtn)
-
+ 
 
         menuBtn.addEventListener('click', ()=>{
-            console.log('IT IS WORKING')
-            if(!isShown) {
-               menu.classList.add('show');
-               
-               menu.classList.remove('close');
-               isShown = true;
-            } else {
-                menu.classList.remove('show');
-               menu.classList.add('close');
-               isShown = false;
-            }
+          if(!isShown) {
+              menu.classList.add('show')
+              menu.classList.remove('close')
+              isShown = true;
+          } else {
+              menu.classList.remove('show')
+              menu.classList.add('close')
+              isShown = false;
+          }
+           
+           
         })
     </script>
 </body>
