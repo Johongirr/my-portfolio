@@ -47,11 +47,12 @@ a {
 /* navigation */
 
 #header-nav {
-    padding: 1rem 0;
+
     font-family:Lora, serif;
 }
 
 .nav {
+    background-color: var(--secondary-color);
     position: fixed;
     width: 95%;
     max-width: 1160px;
@@ -189,6 +190,9 @@ a {
     margin-top: 16rem;
     text-align: center;
 }
+#projects article {
+    border: 1px solid #F16529;
+}
 .projects__title {
     font-size: 3.1rem;
 }
@@ -209,6 +213,7 @@ a {
     flex: 5;
 }
 .projects_pic--1 {
+    
     background: url(images/website-1-homepage.png) left no-repeat;
     background-size: cover;
 }
