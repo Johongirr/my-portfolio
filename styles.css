@@ -21,6 +21,7 @@ body {
 }
 /* general styles */
 img {
+    width: 100%;
     max-width: 100%;
     
 }
@@ -37,12 +38,34 @@ ul {
 a {
     display: inline-block;
     text-decoration: none;
-    transition: all 0.4s;
+    transition: all 0.1s;
     color: var(--primary-color);
+    
+}
+.nav a:hover {
+    border-bottom: 2px solid #000;
 }
 
 /* desktop styles */
-
+/* hamburger menu */
+.hamburger-menu {
+    position: fixed;
+    top: 14px;
+    right: 12px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    
+}
+.hamburger-line {
+    width: 2.2rem;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin-bottom: 0.4rem;
+}
+.hamburger-menu .hamburger-line:last-child {
+    margin-bottom: 0;
+}
 
 /* navigation */
 
@@ -72,16 +95,22 @@ a {
 }
 .nav .nav__list li {
     margin-left: 1.5rem;
-}
-.nav .nav__list-link {
-    padding-left: 1.5rem;
+    padding-left: 1.1rem;
 }
  
+/* show and close is added on click even of menu btn */
+.nav .nav__list.show {
+
+}
+ 
+.nav .nav__list.close {
+
+}
 
 /* main content header */
 .main__header {
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 16rem;
 }
 .main__header-title--large {
     font-size: 4rem;
@@ -191,19 +220,23 @@ a {
     text-align: center;
 }
 #projects article {
-    border: 1px solid #F16529;
+    border: 1px solid lightgray;
+    
+    margin-bottom: 1.5rem;
 }
 .projects__title {
     font-size: 3.1rem;
+    margin-bottom: 2rem;
 }
 .projects__container {
      
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 30px;
+   
 }
 .projects__container article {
-    margin-right: 0.7rem;
+    
 }
 .projects_pic {
     
@@ -236,12 +269,14 @@ a {
     align-items: center;
     margin-top: -0.4rem;
 }
-.projects_link a {
-   display: block;
-   width: 100%;
-   padding: 0.8rem;
-   border: 1px solid var(--primary-color);
+.projects_link a:first-child {
    margin-bottom: 0.3rem;
+}
+.projects_link a {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--primary-color);
 }
 .projects_link a:hover {
     background-color: var(--primary-color);
@@ -316,6 +351,12 @@ a {
     }
     .about__skills-d {
         padding-top: 3rem;
+    }
+    .nav .nav__list {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
     }
     .nav .nav__list li {
         margin-left: 0.7rem;
