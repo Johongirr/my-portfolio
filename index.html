@@ -42,7 +42,14 @@
                     </a>
                 </li>
             </ul>
+             
         </nav>
+        <!-- hamburger menu -->
+        <div class="hamburger-menu">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
     </header>
     <!-- main content -->
     <main id="main" class="container">
@@ -189,6 +196,15 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script>
+        const menu = document.querySelector('.nav__list');
+        const menuBtn = document.querySelector('.hamburger-menu');
+
+        console.log(menu)
+        menuBtn.addEventListener('click', ()=>{
+            console.log(2122)
+        })
+    </script>
      
 </body>
 </html>
